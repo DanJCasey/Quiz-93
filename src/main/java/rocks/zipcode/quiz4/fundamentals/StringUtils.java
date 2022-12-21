@@ -62,10 +62,12 @@ public class StringUtils {
 //    }
 
     public static String removeConsecutiveDuplicateCharacters(String str) {
-        if(str.substring(0,1).equalsIgnoreCase(str.substring(1,2)) )
-            return str.substring(1);
-        else return str.substring(0, 1) + str.substring(1);
+        return str.replaceAll("(.)\\1+", "");
 
+
+//        if(str.substring(0,1).equalsIgnoreCase(str.substring(1,2)) )
+//            return str.substring(1);
+//        else return str.substring(0, 1) + str.substring(1);
     }
 
 
