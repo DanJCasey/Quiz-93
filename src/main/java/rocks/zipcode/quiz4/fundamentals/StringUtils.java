@@ -5,11 +5,14 @@ package rocks.zipcode.quiz4.fundamentals;
  */
 public class StringUtils {
     public static Character getMiddleCharacter(String string) {
-        return null;
+        int middle = string.length()/2;
+        return string.charAt(middle);
     }
 
     public static String capitalizeMiddleCharacter(String str) {
-        return null;
+        int middle = str.length()/2;
+        String upper = str.substring(middle).toUpperCase();
+        return upper;
     }
 
     public static String lowerCaseMiddleCharacter(String str) {
