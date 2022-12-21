@@ -18,25 +18,26 @@ public class Calculator {
     }
 
     public static Double[] squareRoots(Double... value) {
-//        for(value : squareRoots()) {
-//            Math.sqrt()
-//        }
-        return null;
+        Double[] arr = new Double[value.length];
+        for(int i = 0; i < value.length; i++){
+            arr[i] = Math.sqrt(value[i]);
+        }
+        return arr;
     }
 
     public static Double[] squares(Double... values) {
-//        for(int i = 0; i < values.length; i++){
-//            double squared = values[i] * values[i];
-//        }
-//        return squared
+        Double[] arr = new Double[values.length];
+        for(int i = 0; i < values.length; i++){
+            arr[i] = values[i] * values[i];
+        }
+        return arr;
 
 
 //        ArrayList<Double> arr = new ArrayList<Double>();
 //        for(Double value : arr) {
 //            for(int i = 0; i < squares().length; i++) {
 //            }
-//        }
-        return null;
+//        };
     }
 
     public static Double add(Double value1, Double value2) {
